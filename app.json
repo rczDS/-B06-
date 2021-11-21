@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/home/home",
+    "pages/finance/finance",
+    "pages/folder/folder",
+    "pages/manage/manage"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ff0000",
+    "navigationBarTitleText": "软践工作站",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "useExtendedLib": {
+    "kbone": true,
+    "weui": true
+  },
+  "tabBar": {
+    "list": [
+      {
+      "text": "首页",
+      "pagePath":"pages/home/home"
+      },
+      {
+      "text": "文件夹",
+      "pagePath":"pages/folder/folder"
+      },
+      {
+      "text": "管理",
+      "pagePath":"pages/manage/manage"
+      },
+      {
+      "text": "报销",
+      "pagePath":"pages/finance/finance"
+      }
+    ]
+  }
+}
