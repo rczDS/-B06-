@@ -1,4 +1,33 @@
 <view>
-  <button class="weui-btn weui-btn_primary" bindtap="give" >传输测试</button>
+  公告
+  <view class="table">
+    <view class="tr bg-w">
+      <view class="th">任务</view>
+      <view class="th">负责人</view>
+      <view class="th">编辑</view>
+    </view>
+    <block wx:for="{{taskList}}">
+      <view class="tr bg-g">
+        <view class="td">{{item.content}}</view>
+        <view class="td">{{item.members}}</view>
+        <button type="default" bindtap="delTask" data-index="{{index}}">del</button>
+      </view>
+    </block>
+  </view>
+  <button class="default" bindtap="addTask" >添加任务</button>
+  个人任务
+  <view class="table">
+    <view class="tr bg-w">
+      <view class="th">任务</view>
+      <view class="th">提交</view>
+    </view>
+    <block wx:for="{{userTaskList}}">
+      <view class="tr bg-g">
+        <view class="td">{{item.content}}</view>
+        <button type="default">submit</button>
+      </view>
+    </block>
+  </view>
+
   <mp-tabbar style="position:fixed;bottom:0;width:100%;left:0;right:0;" list="{{list}}" bindchange="tabChange"></mp-tabbar>
 </view>

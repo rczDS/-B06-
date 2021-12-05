@@ -4,7 +4,11 @@
     "pages/home/home",
     "pages/finance/finance",
     "pages/folder/folder",
-    "pages/manage/manage"
+    "pages/manage/manage",
+    "pages/addMember/addMember",
+    "pages/delMember/delMember",
+    "pages/setAdmin/setAdmin",
+    "pages/changePasswd/changePasswd"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ff0000",

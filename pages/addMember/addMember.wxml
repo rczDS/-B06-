@@ -1,0 +1,11 @@
+<view>
+  <view  class="inputName">
+    <text>姓名</text>
+    <input type="text" maxlength="10" cursor-spacing="180px" placeholder="请输入姓名"  model:value="{{name}}" bindinput="inputName" />
+  </view>
+  <view  class="inputId">
+    <text>学号</text>
+    <input type="text" maxlength="10" cursor-spacing="180px" placeholder="请输入学号"  model:value="{{id}}" bindinput="inputId" />
+  </view>
+  <button class="weui-btn weui-btn_primary" bindtap="add" >添加</button>
+</view>

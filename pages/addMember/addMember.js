@@ -1,16 +1,28 @@
 Page({
   data:{
+    name:'',
     id:'',
-    passwd:''
+    passwd:'123456'
   },
-  login: function(e){
+  inputName:function(e){
+    this.setData({
+      name: e.detail.value
+    })
+  },
+  inputId:function(e){
+    this.setData({
+      id: e.detail.value
+    })
+  },
+  add: function(e){
     wx.request({
-      url: 'http://127.0.0.1:8000/wx/wx_login/',
-      method: "POST",
+      url: 'http://127.0.0.1:8000/wx/wx_addMember/',
+      method: 'POST',
       header:{
         "content-type": "application/x-www-form-urlencoded"
       },
       data: {
+        name: this.data.name,
         id: this.data.id,
         passwd: this.data.passwd
       },
@@ -23,19 +35,6 @@ Page({
           })
         } 
       },
-    }),
-    wx.switchTab({
-      url: '/pages/home/home',
-    })
-  },
-  inputId:function(e){
-    this.setData({
-      id: e.detail.value
-    })
-  },
-  inputPasswd:function(e){
-    this.setData({
-      passwd: e.detail.value
     })
   }
 })

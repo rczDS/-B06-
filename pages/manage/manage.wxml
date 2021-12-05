@@ -1,3 +1,8 @@
 <view>
-管理
+  <button class="weui-btn weui-btn_primary" bindtap="addMember" >添加成员</button>
+  <button class="weui-btn weui-btn_primary" bindtap="delMember" >删除成员</button>
+  <button class="weui-btn weui-btn_primary" bindtap="setAdmin" >管理员设置</button>
+  <button class="weui-btn weui-btn_primary" bindtap="fileAddress" >文件地址</button>
+  <button class="weui-btn weui-btn_primary" bindtap="changePasswd" >修改密码</button>
+  <button class="weui-btn weui-btn_primary" bindtap="response" >反馈</button>
 </view>

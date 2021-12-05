@@ -1,3 +1,5 @@
 <view>
-  财务管理
+  <button class="weui-btn weui-btn_primary" bindtap="flow" >查看报销流程</button>
+  <button class="weui-btn weui-btn_primary" bindtap="publicity" >报销公示</button>
+  <button class="weui-btn weui-btn_primary" bindtap="uploadInfo" >录入报销信息</button>
 </view>

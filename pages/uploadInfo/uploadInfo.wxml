@@ -1,0 +1,42 @@
+<view>
+  <view  class="inputName">
+    <text>姓名</text>
+    <input type="text" maxlength="10" cursor-spacing="180px" placeholder="请输入姓名"  model:value="{{name}}" bindinput="inputName" />
+  </view>
+  <view  class="inputDepartment">
+    <text>院系</text>
+    <input type="text" maxlength="10" cursor-spacing="180px" placeholder="请输入院系"  model:value="{{department}}" bindinput="inputDepartment" />
+  </view>
+
+  <view class="item">
+    <label class="first">报销类型：</label>
+    <view class="value" bindtap="select">
+      <view style="display:inline-block;">{{type!=''?type:'请选择报销类型'}}</view>
+      <view class="select" style="{{isSelect?'height:'+54*types.length+'rpx;':'border:0'}}">
+        <view class="type" catchtap="getType" wx:for="{{types}}" data-type="{{item}}" wx:key="type">{{item}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view  class="inputRemark">
+    <text>备注</text>
+    <input type="text" maxlength="10" cursor-spacing="180px" placeholder=""  model:value="{{remark}}" bindinput="inputRemark" />
+  </view>
+  <view  class="inputInvoiceNum">
+    <text>发票号</text>
+    <input type="text" maxlength="10" cursor-spacing="180px" placeholder="请输入发票号"  model:value="{{invoiceNum}}" bindinput="inputInvoiceNum" />
+  </view>
+  <view  class="inputMoney">
+    <text>开票金额</text>
+    <input type="text" maxlength="10" cursor-spacing="180px" placeholder="请输入金额"  model:value="{{money}}" bindinput="inputMoney" />
+  </view>
+  <view  class="inputStart">
+    <text>起始地</text>
+    <input type="text" maxlength="10" cursor-spacing="180px" placeholder="请输入起始地"  model:value="{{start}}" bindinput="inputStart" />
+  </view>
+  <view  class="inputEnd">
+    <text>目的地</text>
+    <input type="text" maxlength="10" cursor-spacing="180px" placeholder="请输入目的地"  model:value="{{end}}" bindinput="inputEnd" />
+  </view>
+  <button class="weui-btn weui-btn_primary" bindtap="add" >添加</button>
+</view>

@@ -1,0 +1,7 @@
+<view>
+  <view  class="inputName">
+    <text>姓名</text>
+    <input type="text" maxlength="10" cursor-spacing="180px" placeholder="请输入姓名"  model:value="{{name}}" bindinput="inputName" />
+  </view>
+  <button class="weui-btn weui-btn_primary" bindtap="del" >删除</button>
+</view>

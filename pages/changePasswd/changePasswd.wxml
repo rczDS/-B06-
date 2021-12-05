@@ -1,0 +1,15 @@
+<view>
+  <view  class="inputOldPwd">
+    <text>旧密码</text>
+    <input type="text" maxlength="10" cursor-spacing="180px" placeholder="请输入旧密码"  model:value="{{OldPwd}}" bindinput="inputOldPwd" />
+  </view>
+  <view  class="inputNewPwd1">
+    <text>新密码</text>
+    <input type="text" maxlength="10" cursor-spacing="180px" placeholder="请输入新密码"  model:value="{{NewPwd1}}" bindinput="inputNewPwd1" />
+  </view>
+  <view  class="inputNewPwd2">
+    <text>确认新密码</text>
+    <input type="text" maxlength="10" cursor-spacing="180px" placeholder="请再次输入新密码"  model:value="{{NewPwd2}}" bindinput="inputNewPwd2" />
+  </view>
+  <button class="weui-btn weui-btn_primary" bindtap="changePwd" >修改密码</button>
+</view>
